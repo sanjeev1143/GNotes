@@ -3,14 +3,13 @@ import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAbEvp2vtblcJ0o1WR-BDx_AyoO7wjwpl8",
-    authDomain: "notes-1f870.firebaseapp.com",
-    databaseURL: "https://notes-1f870-default-rtdb.firebaseio.com",
-    projectId: "notes-1f870",
-    storageBucket: "notes-1f870.appspot.com",
-    messagingSenderId: "854350828256",
-    appId: "1:854350828256:web:7497b11456144c67f27685",
-    measurementId: "G-8GPJ06ELK1"
+    apiKey: "AIzaSyDnT4_frOCfTecs9fOfgnDJHK0rV-Zm0sY",
+    authDomain: "notes-d67dc.firebaseapp.com",
+    projectId: "notes-d67dc",
+    storageBucket: "notes-d67dc.appspot.com",
+    messagingSenderId: "518787124836",
+    appId: "1:518787124836:web:cc85de1fd8d054a403d971",
+    measurementId: "G-S1LJDVCBH7"
 };
 
 // Initialize Firebase
