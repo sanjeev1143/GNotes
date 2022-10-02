@@ -1,38 +1,206 @@
-.App {
-  text-align: center;
+.navbar {
+  background-color: #6200EE;
+  color: whitesmoke;
+  box-shadow: 2px 2px 5px #00203FFF;
+  margin-bottom: 3px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* body {
+  background: url("https://img.freepik.com/free-vector/cute-pattern-background-polka-dot-black-white-vector_53876-151294.jpg?w=1380&t=st=1664648267~exp=1664648867~hmac=118ec399f736d6ae4395234861e1eae02c6dfabbae72ce2ba64b0a39ed09ce08");
+} */
+
+.night_mode {
+  background-color: #292929;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.night_mode .notes {
+  background-color: #121212;
+  color: #BB86FC;
+  box-shadow: 1px 1px 5px grey;
+  text-shadow: 1px 1px 1px gray;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.night_mode .notes h3 {
+  color: #fff;
+}
+
+.night_mode Button {
+  color: #6200EE;
+}
+
+.night_mode .navbar {
+  background-color: #00203FFF;
+  box-shadow: 2px 2px 5px #ADEFD1FF;
+  margin-bottom: 3px;
+  color: #ADEFD1FF;
+}
+
+.navbar li {
+  color: black;
+}
+
+.createNote {
+  margin-top: 2vh;
+  height: 10vw;
+  width: fit-content;
+  margin-left: 35vw;
+  margin-right: 35vw;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px #00203FFF;
+  justify-content: center;
+}
+
+.createNote input {
+  margin: 3px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.createNote textarea {
+  margin: 3px;
+  resize: none;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+input,
+textarea {
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  color: #6200EE;
+  font-family: 'Work Sans', sans-serif;
+  outline: none;
+  border: 0px;
+  width: 30vw;
+}
+
+
+
+.noteBox {
   display: flex;
   flex-direction: column;
+}
+
+.addnote {
+  align-self: flex-end;
+}
+
+.notes {
+  font-family: 'Work Sans', sans-serif;
+  color: #6200EE;
+  display: flex;
+  flex-direction: column;
+  background-color: #B0BEF0;
+  border-radius: 15px;
+  padding-left: 4vh;
+  padding-right: 4vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+}
+
+.night_mode .navbar {
+  background-color: black;
+  box-shadow: 2px 2px 5px purple;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.night_mode .createNote,
+.night_mode .createNote input,
+.night_mode .createNote textarea {
+  background-color: #9B96CB;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.notes textarea {
+  resize: none;
+}
+
+.notes h3 {
+  margin: 5vh;
+
+}
+
+.sideBar {
+  display: flex;
+  position: fixed;
+  opacity: 5;
+  top: 8.5vh;
+  transition: 1s;
+  z-index: 10;
+  padding: 8px 0 8px 16px;
+  flex-direction: column;
+  height: 100vh;
+  width: 10vw;
+  /* background: linear-gradient(#00203FFF, rgb(12, 60, 108), #fff); */
+  background-color: #2f4050;
+}
+
+.disc {
+  z-index: 20;
+}
+
+.paginationBttns {
+  width: 80%;
+  height: 40%;
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.discIcon {
+  margin-left: 5vw;
+}
+
+.paginationBttns a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 1px solid #2C2776;
+  color: #00203FFF;
+  cursor: pointer;
+}
+
+footer {
+  width: 100vw;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.night_mode .paginationBttns a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 1px solid #2C2776;
+  color: white;
+  cursor: pointer;
+}
+
+.paginationBttns a:hover {
+  background-color: #9B96CB;
+  color: #00203FFF;
+}
+
+.paginationActive a {
+  background-color: #9B96CB;
+  color: #00203FFF;
+}
+
+.updateIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
