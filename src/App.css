@@ -107,7 +107,7 @@ textarea {
 
 .night_mode .navbar {
   background-color: black;
-  box-shadow: 2px 2px 5px purple;
+  box-shadow: 2px 2px 5px #9B96CB;
   color: white;
 }
 
@@ -203,4 +203,18 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.searchIp {
+  height: 2.5rem;
+  padding-left: 2vw;
+  font-family: 'Work Sans', sans-serif;
+  margin-left: 45vw;
+  border-radius: 10px;
+}
+
+.alert {
+  margin: 4vw;
+  height: 30vh;
+  overflow: scroll;
 }
