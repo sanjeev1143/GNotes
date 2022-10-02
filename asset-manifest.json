@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Notess/static/css/main.5f0a1d52.css",
+    "main.js": "/Notess/static/js/main.76f03e73.js",
+    "index.html": "/Notess/index.html",
+    "main.5f0a1d52.css.map": "/Notess/static/css/main.5f0a1d52.css.map",
+    "main.76f03e73.js.map": "/Notess/static/js/main.76f03e73.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f0a1d52.css",
+    "static/js/main.76f03e73.js"
+  ]
+}
