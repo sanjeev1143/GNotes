@@ -8,6 +8,12 @@ import SearchIcon from '@mui/icons-material/Search';
 import { collection, getDocs } from "firebase/firestore";
 
 function Card(props) {
+    useEffect(() => {
+        setTimeout(() => {
+            window.location.reload()
+        }, 5000)
+
+    })
     return (
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
             <h3>{props.title}</h3> <p>{props.content}</p>
@@ -30,6 +36,7 @@ function Navbar() {
                 setLoad(true);
             }
         };
+        //setFound(read.filter((value) => value.title.toLowerCase() == search.toLocaleLowerCase()));
         getNotes();
     }, [read], [load])
     const [search, setSearch] = useState("");
@@ -38,7 +45,7 @@ function Navbar() {
         setSearch(e.target.value)
     }
     function searchData() {
-
+        // window.location.reload();
         setFound(read.filter((value) => value.title.toLowerCase() == search.toLocaleLowerCase()));
         setSearch("");
 
@@ -60,9 +67,10 @@ function Navbar() {
                     <input onChange={onSearch} placeholder="Enter the title you want to search..." className='searchIp' value={search} /><Button onClick={searchData}><SearchIcon fontSize='large' htmlColor='white' /></Button>
                 </div>
             </nav>
-            {found.length === 0 ? <Card title="Invalid Search" content="" /> : <div>{found.map((value) => <Card title={value.title} content={value.content} />)}</div>}
+            {<div>{found && found.map((value) => <Card title={value.title} content={value.content} />)}</div>}
         </div>
     )
 }
 
 export default Navbar
+// found.length === 0 ?  : 

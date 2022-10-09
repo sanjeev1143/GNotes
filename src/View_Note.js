@@ -44,7 +44,7 @@ function View_Note() {
                 <div class="spinner-border" style={{ width: "3rem", height: "3rem", position: "absolute", top: "50vh", left: "50vw" }} role="status">
                     <span class="visually-hidden">Loading...</span>
                 </div>
-            </div> : <div>{displayUsers}
+            </div> : <div><div className='elements'>{displayUsers}</div>
                 {
                     read.length > 6 ? <ReactPaginate
                         previousLabel={"Previous"}
@@ -56,6 +56,7 @@ function View_Note() {
                         nextLinkClassName={"nextBttn"}
                         disabledClassName={"paginationDisabled"}
                         activeClassName={"paginationActive"}
+
                     /> : null}</div>}
         </div>
     )

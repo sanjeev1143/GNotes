@@ -91,15 +91,13 @@ textarea {
   font-family: 'Work Sans', sans-serif;
   color: #6200EE;
   display: flex;
+  margin: 1vh;
   flex-direction: column;
   background-color: #B0BEF0;
   border-radius: 15px;
   padding-left: 4vh;
   padding-right: 4vh;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  margin-left: 10vw;
-  margin-right: 10vw;
+
   align-items: center;
   justify-content: center;
 
@@ -214,7 +212,20 @@ footer {
 }
 
 .alert {
-  margin: 4vw;
-  height: 30vh;
+  height: 25vh;
+  position: absolute;
+  width: 30vw;
+  background-color: rgba(128, 0, 128, 0.451);
+  color: #ee0000;
+  top: 10vh;
+  right: 4vw;
   overflow: scroll;
+}
+
+.elements {
+  display: grid;
+  grid-template-columns: 2.5fr 2.5fr 2.5fr;
+  overflow: scroll;
+  grid-column-gap: 1vw;
+  margin: 1vh;
 }
